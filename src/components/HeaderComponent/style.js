@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const WrapperHeader = styled(Row)`
   padding: 10px 120px;
-  background-color: #2810fb;
+  background-color: #00dd72;
   align-items: center;
 `;
 export const WrapperTextHeader = styled.span`

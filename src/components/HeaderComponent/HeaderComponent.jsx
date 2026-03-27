@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Flex } from "antd";
+import { Button, Col, Flex } from "antd";
 import { WrapperTextHeader } from "./style";
 import { WrapperHeader } from "./style";
 import Search from "antd/es/transfer/search";
@@ -9,6 +9,7 @@ import { WrapperHeaderAccount } from "./style";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { WrapperTextHeaderSmall } from "./style";
 import { Color } from "antd/es/color-picker";
+import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch";
 const HeaderComponent = () => {
   return (
     <div>
@@ -18,15 +19,15 @@ const HeaderComponent = () => {
           <WrapperTextHeader> TuIT </WrapperTextHeader>
         </Col>
         <Col span={12}>
-          <Search
-            placeholder="input search text"
-            allowClear
-            enterButton="Search"
+          <ButtonInputSearch
+            bordered={false}
             size="large"
+            textButton="Tìm kiếm"
+            placeholder="input search text"
             // onSearch={onSearch}
           />
         </Col>
-        <Col span={6} style={{ display: "flex", gap: "20px" }}>
+        <Col span={6} style={{ display: "flex", gap: "20px", alignItems: "center" }}>
           <WrapperHeaderAccount>
             <UserOutlined style={{ fontSize: "30px" }} />
             <div>
