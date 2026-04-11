@@ -3,8 +3,10 @@ import styled from "styled-components";
 
 export const WrapperHeader = styled(Row)`
   padding: 10px 120px;
-  background-color: #00dd72;
+  background-color: #787878;
   align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
 `;
 export const WrapperTextHeader = styled.span`
   font-size: 20px;
@@ -21,4 +23,5 @@ export const WrapperHeaderAccount = styled.div`
 export const WrapperTextHeaderSmall = styled.span`
   font-size: 12px;
   color: #fff;
+  white-space: nowrap;
 `;
