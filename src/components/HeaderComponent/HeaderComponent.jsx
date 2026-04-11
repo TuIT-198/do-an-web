@@ -22,8 +22,8 @@ const HeaderComponent = () => {
           <ButtonInputSearch
             bordered={false}
             size="large"
-            textButton="Tìm kiếm"
-            placeholder="input search text"
+            textButton="Search"
+            placeholder="iphone, laptop,..."
             // onSearch={onSearch}
           />
         </Col>
